@@ -1,7 +1,7 @@
-import Dashboard from './screens/Dashboard'
-import Registration from './screens/Registration'
-import PostList from './screens/Post/PostList'
-import PostAdd from './screens/Post/PostAdd'
+// import Dashboard from './screens/Dashboard'
+// import Registration from './screens/Registration'
+// import PostList from './screens/Post/PostList'
+// import PostAdd from './screens/Post/PostAdd'
 import PostDetails from './screens/Post/PostDetails';
 function App() {
   const post = {
