@@ -1,0 +1,175 @@
+.post-add-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0c1929 0%, #1a365d 50%, #234876 100%);
+}
+
+.post-add-content {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+
+.post-add-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.back-button {
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-bottom: 1rem;
+  padding-left: 0;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  color: #fff !important;
+}
+
+.post-add-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-add-icon {
+  font-size: 40px;
+  filter: drop-shadow(0 0 12px currentColor);
+}
+
+.post-add-title {
+  color: #fff !important;
+  margin: 0 !important;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.post-add-subtitle {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 1rem;
+}
+
+.post-add-card {
+  background: rgba(255, 255, 255, 0.97);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.post-add-card .ant-card-body {
+  padding: 2rem;
+}
+
+.post-add-form .ant-form-item-label > label {
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.input-icon {
+  color: #a0aec0;
+}
+
+.post-add-form .ant-input-lg,
+.post-add-form .ant-input-number-lg,
+.post-add-form .ant-select-lg .ant-select-selector {
+  border-radius: 10px;
+  border-color: #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.post-add-form .ant-input-lg:hover,
+.post-add-form .ant-input-number-lg:hover,
+.post-add-form .ant-select-lg:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #1677ff;
+}
+
+.post-add-form .ant-input-lg:focus,
+.post-add-form .ant-input-number-lg:focus,
+.post-add-form .ant-input-number-focused,
+.post-add-form .ant-select-focused .ant-select-selector {
+  border-color: #1677ff !important;
+  box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.1) !important;
+}
+
+.post-add-form .ant-select-lg {
+  width: 100%;
+}
+
+.post-add-form .ant-select-lg .ant-select-selector {
+  height: 40px !important;
+  padding: 4px 11px !important;
+}
+
+.post-add-form .ant-select-lg .ant-select-selection-search-input {
+  height: 38px !important;
+}
+
+.post-add-form .ant-select-lg .ant-select-selection-item {
+  line-height: 30px !important;
+}
+
+.post-textarea {
+  border-radius: 10px !important;
+  border-color: #e2e8f0;
+  transition: all 0.2s ease;
+  resize: none;
+}
+
+.post-textarea:hover {
+  border-color: #1677ff;
+}
+
+.post-textarea:focus {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.1);
+}
+
+.submit-section {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.submit-button {
+  height: 52px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #1677ff 0%, #4096ff 100%);
+  border: none;
+  box-shadow: 0 4px 16px rgba(22, 119, 255, 0.35);
+  transition: all 0.2s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(22, 119, 255, 0.45);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 576px) {
+  .post-add-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .post-add-card .ant-card-body {
+    padding: 1.5rem;
+  }
+
+  .post-add-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .post-add-icon {
+    font-size: 36px;
+  }
+}
+

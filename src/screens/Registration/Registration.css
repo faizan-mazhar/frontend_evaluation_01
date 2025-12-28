@@ -1,0 +1,164 @@
+.registration-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0c1929 0%, #1a365d 50%, #234876 100%);
+}
+
+.registration-content {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+
+.registration-container {
+  width: 100%;
+  max-width: 680px;
+}
+
+.registration-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.registration-icon {
+  font-size: 48px;
+  filter: drop-shadow(0 0 16px currentColor);
+}
+
+.registration-title {
+  color: #fff !important;
+  margin: 0 !important;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.registration-subtitle {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 1rem;
+}
+
+.registration-card {
+  background: rgba(255, 255, 255, 0.97);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.registration-card .ant-card-body {
+  padding: 2rem;
+}
+
+.registration-form .ant-form-item-label > label {
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.form-section {
+  margin-bottom: 0.5rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-icon {
+  font-size: 1.25rem;
+  color: #1677ff;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  color: #1a202c;
+  letter-spacing: -0.01em;
+}
+
+.form-divider {
+  margin: 1.5rem 0 !important;
+  border-color: #e2e8f0 !important;
+}
+
+.input-icon {
+  color: #a0aec0;
+}
+
+.registration-form .ant-input-lg {
+  border-radius: 10px;
+  border-color: #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.registration-form .ant-input-lg:hover {
+  border-color: #1677ff;
+}
+
+.registration-form .ant-input-lg:focus,
+.registration-form .ant-input-affix-wrapper-lg:focus,
+.registration-form .ant-input-affix-wrapper-focused {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.1);
+}
+
+.registration-form .ant-input-affix-wrapper-lg {
+  border-radius: 10px;
+  border-color: #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.registration-form .ant-input-affix-wrapper-lg:hover {
+  border-color: #1677ff;
+}
+
+.submit-section {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.submit-button {
+  height: 52px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #1677ff 0%, #4096ff 100%);
+  border: none;
+  box-shadow: 0 4px 16px rgba(22, 119, 255, 0.35);
+  transition: all 0.2s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(22, 119, 255, 0.45);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .registration-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .registration-card .ant-card-body {
+    padding: 1.5rem;
+  }
+
+  .registration-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .registration-icon {
+    font-size: 40px;
+  }
+}
+

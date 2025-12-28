@@ -1,0 +1,78 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0c1929 0%, #1a365d 50%, #234876 100%);
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-icon {
+  font-size: 32px;
+  filter: drop-shadow(0 0 12px currentColor);
+}
+
+.dashboard-title {
+  color: #fff !important;
+  margin: 0 !important;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.posts-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 
+    0 4px 24px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.posts-card .ant-card-body {
+  padding: 0.5rem 0;
+}
+
+.post-item {
+  padding: 1rem 1.5rem !important;
+  transition: background 0.2s ease;
+}
+
+.post-item:hover {
+  background: rgba(22, 119, 255, 0.04);
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #1677ff, #4096ff);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(22, 119, 255, 0.3);
+}
+
+.post-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
