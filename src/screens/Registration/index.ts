@@ -1,3 +1,3 @@
-export { default } from './Registration'
-export type { RegistrationFormData } from './Registration'
+export { default as Registration } from './Registration'
+
 
