@@ -1,22 +1,24 @@
 
+import Dashboard from "./screens/Dashboard"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PostDetails from "./screens/Post/PostDetails";
+import PostAdd from "./screens/Post/PostAdd";
+import Registration from "./screens/Registration";
+import { PostList } from "./screens/Post";
+
 function App() {
 
   return (
-    <p>
-      Welcome to Frontend Evaluation. 
-      Your task is to build a web application that allows users to view a list of posts and add new posts.
-      The application should be built using React, Vite, Ant Design, and Vitest.
-      To get started, please follow the instructions below:
-      - Fork the repository
-      - Install dependencies
-      - Run the development server
-      - Run the tests
-      To Raise PR: 
-      - Create a new branch with your name in the parent repo.
-      - Raise a PR from your fork to the parent repo.
-      - Wait for the pipeline to pass.
-      - Submit your submission.
-    </p>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/postlisting" element={<PostList />} />
+        <Route path="/posts/:id" element={<PostDetails />} />
+        <Route path="/posts/add" element={<PostAdd />} />
+        <Route path="/registration" element={<Registration />} />
+
+      </Routes>
+    </BrowserRouter> 
   )
 }
 
