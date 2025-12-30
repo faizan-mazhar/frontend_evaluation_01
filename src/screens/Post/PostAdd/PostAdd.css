@@ -1,0 +1,28 @@
+.post-add-layout {
+  min-height: 100vh;
+  padding: 24px;
+  background: #f5f5f5;
+}
+
+.post-add-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-add-card {
+  background: white;
+  border-radius: 8px;
+}
+
+.post-add-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.post-add-title {
+  margin-bottom: 8px;
+}
+
+.back-button {
+  margin-bottom: 16px;
+}
