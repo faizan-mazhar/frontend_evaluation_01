@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
-import Registration from './Registration'
+import { Registration } from './Registration'
 
 describe('Registration', () => {
   it('renders the registration title', () => {
@@ -56,7 +56,7 @@ describe('Registration', () => {
     const emailInput = screen.getByLabelText('Email')
     fireEvent.change(emailInput, { target: { value: 'invalid-email' } })
     fireEvent.blur(emailInput)
-    
+
     await waitFor(() => {
       expect(screen.getByText('Please enter a valid email')).toBeInTheDocument()
     })
@@ -67,7 +67,7 @@ describe('Registration', () => {
     const latitudeInput = screen.getByLabelText('Latitude')
     fireEvent.change(latitudeInput, { target: { value: 'invalid-latitude' } })
     fireEvent.blur(latitudeInput)
-    
+
     await waitFor(() => {
       expect(screen.getByText('Please enter a valid latitude')).toBeInTheDocument()
     })
@@ -78,7 +78,7 @@ describe('Registration', () => {
     const longitudeInput = screen.getByLabelText('Longitude')
     fireEvent.change(longitudeInput, { target: { value: 'invalid-longitude' } })
     fireEvent.blur(longitudeInput)
-    
+
     await waitFor(() => {
       expect(screen.getByText('Please enter a valid longitude')).toBeInTheDocument()
     })
@@ -88,7 +88,7 @@ describe('Registration', () => {
     render(<Registration />)
     const submitButton = screen.getByRole('button', { name: 'Create Account' })
     fireEvent.click(submitButton)
-    
+
     await waitFor(() => {
       expect(screen.getByText('Please enter suite/apt')).toBeInTheDocument()
     })
@@ -98,7 +98,7 @@ describe('Registration', () => {
     render(<Registration />)
     const submitButton = screen.getByRole('button', { name: 'Create Account' })
     fireEvent.click(submitButton)
-    
+
     await waitFor(() => {
       expect(screen.getByText('Please enter city')).toBeInTheDocument()
     })
