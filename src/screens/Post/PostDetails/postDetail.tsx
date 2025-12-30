@@ -41,7 +41,7 @@ const PostDetail: React.FC<PostDetailProps> = ({ post: propPost, onBack }) => {
                                     background: '#fff',
                                     borderRadius: '12px',
                                     boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
-                                    padding: '2rem',
+                                    padding: '2rem'
                                 }}
                             >
                                 <Button
